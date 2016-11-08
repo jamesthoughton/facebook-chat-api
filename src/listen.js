@@ -68,7 +68,6 @@ module.exports = function(defaultFuncs, api, ctx) {
     .then(utils.parseAndCheckLogin(ctx.jar, defaultFuncs))
     .then(function(resData) {
       var now = Date.now();
-      log.info("Got answer in ", now - tmpPrev);
       tmpPrev = now;
 
       if(resData && resData.t === "lb") {
@@ -212,7 +211,6 @@ module.exports = function(defaultFuncs, api, ctx) {
     })
     .catch(function(err) {
       if (err.code === 'ETIMEDOUT') {
-        log.info("Suppressed timeout error.");
       } else {
         log.error("ERROR in listen --> ", err);
         globalCallback(err);

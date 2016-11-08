@@ -91,7 +91,6 @@ module.exports = function(defaultFuncs, api, ctx) {
       }
       form['specific_to_list[' + (threadID.length) + ']'] = "fbid:" + ctx.userID;
       form['client_thread_id'] = "root:" + messageAndOTID;
-      log.info("Sending message to multiple users: " + threadID);
     } else {
       // This means that threadID is the id of a user, and the chat
       // is a single person chat
