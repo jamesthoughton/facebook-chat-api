@@ -1,6 +1,6 @@
 {
-  "name": "facebook-chat-api",
-  "version": "1.2.0",
+  "name": "facebook-chat-api-nolog",
+  "version": "1.2.1",
   "description": "Facebook chat API that doesn't rely on XMPP.  Will NOT be deprecated April 30th 2015.",
   "scripts": {
     "test": "node_modules/.bin/mocha",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Schmavery/facebook-chat-api.git"
+    "url": "git://github.com/jamesthoughton/facebook-chat-api-nolog.git"
   },
   "keywords": [
     "facebook",
@@ -16,7 +16,7 @@
     "api"
   ],
   "bugs": {
-    "url": "https://github.com/Schmavery/facebook-chat-api/issues"
+    "url": "https://github.com/jameshoughton/facebook-chat-api-nolog/issues"
   },
   "author": "Avery, David, Maude, Benjamin",
   "license": "MIT",
